@@ -1,0 +1,114 @@
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul, ol, div {
+    margin: 0 0;
+    padding: 0 0;
+}
+
+.container {
+    width: 800px;
+}
+
+.index{
+    position:relative;
+    top:200px;
+}
+
+.index-title{
+    font-size:48px;
+    height:30px;
+    text-align:center;
+}
+.index-desc{
+    margin-top:5px;
+    font-size:16px;
+    color:#7A7A7A;
+    height:30px;
+    text-align:center;
+}
+.index-login{
+    margin-top:30px;
+    text-align:center;
+}
+
+.header {
+    margin-top:25px;
+    margin-left:10px;
+    margin-right:10px;
+}
+
+.site-title {
+    display:inline;
+    font-size:40px;
+}
+.site-description{
+    display:inline;
+    font-size:14px;
+    color:#7A7A7A;
+    margin-left:5px;
+    font-weight:normal;
+}
+
+.search-form{
+    margin-top:20px;
+    width:700px;
+}
+.query{
+    width:500px;
+}
+
+.results {
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom:50px;
+    padding: 0;
+}
+
+
+
+.result{
+    padding: 15px 15px;
+    position: relative;
+    border: 1px solid #EDF1F5;
+    border-width: 0 0 1px 0;
+    color: #555;
+}
+
+.result:hover{
+    background: #e3f2ff;
+}
+
+.result a, .result a:link, .result a:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.name {
+    display: inline;
+    font-weight: bold;
+    color: #3B5998;
+}
+.time    {
+    display: inline;
+    position: absolute;
+    top:   15px;
+    right: 15px;
+    color: gray;
+}
+.message {
+    display: block;
+    padding-top:8px;
+}
+
+/* error.html */
+#error-message{
+    margin-top:70px;
+
+}
+.to-home{
+    font-size:20px;
+    margin-top:70px;
+    text-align:center;
+}

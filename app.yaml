@@ -1,0 +1,35 @@
+application: locateweb
+#application: locatewebdev
+version: 5
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /(.*\.(gif|png|jpg|ico|txt))
+  static_files: static/\1
+  upload: static/(.*\.(gif|png|jpg|ico|txt))
+
+- url: /bootstrap
+  static_dir: static/bootstrap
+
+- url: /css
+  static_dir: static/css
+
+- url: /img
+  static_dir: static/img
+
+- url: /js
+  static_dir: static/js
+
+- url: /crawl.*
+  script: main.app
+  login: admin
+
+- url: /.*
+  script: main.app
+  secure: always
+
+libraries:
+- name: jinja2
+  version: latest

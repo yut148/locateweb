@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Locate Results - {{query}}</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="user">
+            <div style='float:right;'>
+                <strong>{{user.name}}</strong> |
+                Indexed: <strong>{{user.num_indexed}}</strong> |
+                <a onClick='window.location.reload()'>Refresh</a> |
+                <a href='/delete'>Delete Index</a> |
+                <a href='https://www.facebook.com/logout.php?next={{logout_url}}&access_token={{user.access_token}}'>Logout</a>
+            </div>
+        </div>
+        <div class="header">
+            <h1 class='site-title'>Locate</h1>
+            <h2 class='site-description'>find personal status from facebook quickly</h2>
+            <form id='search-form' action="/search" class='form-inline search-form'>
+                <input class="query" id="query" name="q" type="text" maxlength="512"  class="input-xlarge focused" value="{{query}}"/>
+                <input type="submit" value="Search"  class="btn"/>
+                <label class="checkbox"><input type=checkbox value='phrase' id="phrase" name="p" {% if phrase == 'phrase' %} checked='True' {% endif %}/>Phrase Search</label>
+            </form>
+        </div>
+
+        <div class="main">
+            <ul class='results'>
+                {% for result in results %}
+                <li class='result'>
+                    <a href='{{result.url}}'>
+                        <div class='name'>{{result.from_name}}</div>
+                        <div class='time'>{{result.date_time|datetimeformat}}</div>
+                        <div class='message'>{{result.message|safe}}</div>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
