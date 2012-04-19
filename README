@@ -7,4 +7,5 @@
       immediately. Current version is prototype. It indexes only your own
       Update Statuses. It does not index your friend's Update Statuses or
       all other public Update Statues. Current version runs on Google
-      AppEngine. Please try https://locateweb.appspot.com (Prototype).
+      AppEngine (https://developers.google.com/appengine/). Please try
+      prototype, https://locateweb.appspot.com .
