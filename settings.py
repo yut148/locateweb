@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 import appengineutils
 
 PRODUCTION_BASE_URL  = 'https://locateweb.appspot.com'

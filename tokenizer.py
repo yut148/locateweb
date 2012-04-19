@@ -1,4 +1,4 @@
-__author__ = 'hideki'
+# -*- coding: utf-8 -*-
 
 import re
 

@@ -1,1 +1,10 @@
-This file was created by PyCharm 2.5 for binding GitHub repository
+                          // Locate //
+
+
+    ~ What is Locate?
+
+      Locate is a personal search engine. It locates your personal content
+      immediately. Current version is prototype. It indexes only your own
+      Update Statuses. It does not index your friend's Update Statuses or
+      all other public Update Statues. Current version runs on Google
+      AppEngine. Please try https://locateweb.appspot.com (Prototype).

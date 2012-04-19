@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 from google.appengine.ext import db
 
 # https://developers.facebook.com/docs/reference/api/user/

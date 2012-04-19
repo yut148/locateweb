@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import logging
 import urllib2
 import json
